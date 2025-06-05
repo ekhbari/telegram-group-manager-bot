@@ -1,0 +1,29 @@
+// هذا الملف اختياري، لكنه مفيد لتكوينات Vercel
+
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/webhook"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/webhook",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "POST, GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, X-Telegram-Bot-Api-Secret-Token"
+        }
+      ]
+    }
+  ]
+}
