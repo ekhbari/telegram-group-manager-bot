@@ -1,0 +1,19 @@
+{
+  "name": "telegram-bot-kv",
+  "version": "1.0.0",
+  "description": "Telegram bot hosted on Vercel using Vercel KV for data storage",
+  "main": "api/webhook.js",
+  "scripts": {
+    "start": "node api/webhook.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/kv": "^1.0.1",
+    "telegraf": "^4.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
